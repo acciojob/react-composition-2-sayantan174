@@ -1,17 +1,26 @@
 import React from "react";
 import Para from "./Para";
 const Modal = (props) => {
-    
   return (
     <>
-      <button onClick={()=>{
+      <button
+        className="model-overlay"
+        onClick={() => {
           props.callback();
-        }}>Show Modal</button>
-      <div className="model-overlay" style={{display:props.show?"block":"none"}}>
-        <button className="model-close" onClick={()=>{
-          props.callback();
-        }}>Close</button>
-        <Para/>
+        }}
+      >
+        Show Modal
+      </button>
+      <div style={{ display: props.show ? "block" : "none" }}>
+        <button
+          className="model-close"
+          onClick={() => {
+            props.callback();
+          }}
+        >
+          Close
+        </button>
+        <Para />
       </div>
     </>
   );
