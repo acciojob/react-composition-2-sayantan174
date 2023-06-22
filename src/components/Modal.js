@@ -11,7 +11,7 @@ const Modal = (props) => {
         Show Modal
       </button>
       { props.show &&
-        <div className="modal-overlay">
+        <div className="modal-overlay modal">
           <button
             className="modal-close"
             onClick={() => {
@@ -20,7 +20,7 @@ const Modal = (props) => {
           >
             Close
           </button>
-          <Para />
+          <p>This is the content of the modal.</p>
         </div>
       }
     </>
