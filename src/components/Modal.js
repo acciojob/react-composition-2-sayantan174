@@ -10,7 +10,7 @@ const Modal = (props) => {
       >
         Show Modal
       </button>
-      { props.show &&
+      {props.show ? (
         <div className="modal-overlay modal">
           <button
             className="modal-close"
@@ -22,7 +22,9 @@ const Modal = (props) => {
           </button>
           <p>This is the content of the modal.</p>
         </div>
-      }
+      ) : (
+        <></>
+      )}
     </>
   );
 };
