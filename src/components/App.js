@@ -8,7 +8,7 @@ const App = () => {
     setShow(!show);
 }
   return (
-    <div>
+    <div onClick={showFalse}>
         {/* Do not remove the main div */}
         <Modal show={show} callback={showFalse}/>
     </div>
