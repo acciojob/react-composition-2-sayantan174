@@ -1,5 +1,5 @@
 import React from "react";
-
+import Para from "./Para";
 const Modal = (props) => {
     
   return (
@@ -11,7 +11,7 @@ const Modal = (props) => {
         <button className="model-close" onClick={()=>{
           props.callback();
         }}>Close</button>
-        <p>This is the content of the modal.</p>
+        <Para/>
       </div>
     </>
   );
