@@ -11,7 +11,7 @@ const Modal = (props) => {
       >
         Show Modal
       </button>
-      <div style={{ display: props.show ? "block" : "none" }}>
+      {/* <div style={{ display: props.show ? "block" : "none" }}>
         <button
           className="model-close"
           onClick={() => {
@@ -21,7 +21,7 @@ const Modal = (props) => {
           Close
         </button>
         <Para />
-      </div>
+      </div> */}
     </>
   );
 };
