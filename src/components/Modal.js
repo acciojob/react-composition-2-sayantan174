@@ -11,9 +11,9 @@ const Modal = (props) => {
         Show Modal
       </button>
       { props.show &&
-        <div className="model-overlay">
+        <div className="modal-overlay">
           <button
-            className="model-close"
+            className="modal-close"
             onClick={() => {
               props.callback();
             }}
